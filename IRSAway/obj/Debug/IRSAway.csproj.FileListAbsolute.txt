@@ -1,0 +1,9 @@
+c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\bin\Debug\IRSAway.exe.config
+c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\bin\Debug\IRSAway.exe
+c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\bin\Debug\IRSAway.pdb
+c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.csprojResolveAssemblyReference.cache
+c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.Form1.resources
+c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.Properties.Resources.resources
+c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.csproj.GenerateResource.Cache
+c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.exe
+c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.pdb
