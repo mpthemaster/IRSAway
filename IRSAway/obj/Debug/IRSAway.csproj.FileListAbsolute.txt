@@ -7,3 +7,12 @@ c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Deb
 c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.csproj.GenerateResource.Cache
 c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.exe
 c:\users\mjpet_000\documents\visual studio 2012\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.pdb
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\IRSAway\IRSAway\bin\Debug\IRSAway.exe.config
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.exe
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.pdb
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\IRSAway\IRSAway\bin\Debug\IRSAway.exe
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\IRSAway\IRSAway\bin\Debug\IRSAway.pdb
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.Form1.resources
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.Properties.Resources.resources
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\IRSAway\IRSAway\obj\Debug\IRSAway.csproj.GenerateResource.Cache
