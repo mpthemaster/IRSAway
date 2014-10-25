@@ -28,22 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemSave = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewAccounts = new System.Windows.Forms.DataGridView();
-            this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTransaction = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSalesTax = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnExempt = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.database1DataSet = new IRSAway.Database1DataSet();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tableTableAdapter = new IRSAway.Database1DataSetTableAdapters.TableTableAdapter();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.transactionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.netDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesTaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.exemptDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.menuStripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAccounts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -75,56 +81,20 @@
             // 
             // dataGridViewAccounts
             // 
+            this.dataGridViewAccounts.AutoGenerateColumns = false;
             this.dataGridViewAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAccounts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnDate,
-            this.ColumnTransaction,
-            this.ColumnAmount,
-            this.ColumnNet,
-            this.ColumnSalesTax,
-            this.ColumnExempt});
+            this.dateDataGridViewTextBoxColumn,
+            this.transactionDataGridViewTextBoxColumn,
+            this.amountDataGridViewTextBoxColumn,
+            this.netDataGridViewTextBoxColumn,
+            this.salesTaxDataGridViewTextBoxColumn,
+            this.exemptDataGridViewCheckBoxColumn});
+            this.dataGridViewAccounts.DataSource = this.tableBindingSource;
             this.dataGridViewAccounts.Location = new System.Drawing.Point(15, 96);
             this.dataGridViewAccounts.Name = "dataGridViewAccounts";
             this.dataGridViewAccounts.Size = new System.Drawing.Size(618, 336);
             this.dataGridViewAccounts.TabIndex = 1;
-            // 
-            // ColumnDate
-            // 
-            this.ColumnDate.HeaderText = "Date";
-            this.ColumnDate.MaxInputLength = 2;
-            this.ColumnDate.Name = "ColumnDate";
-            this.ColumnDate.Width = 50;
-            // 
-            // ColumnTransaction
-            // 
-            this.ColumnTransaction.HeaderText = "Transaction";
-            this.ColumnTransaction.MaxInputLength = 40;
-            this.ColumnTransaction.Name = "ColumnTransaction";
-            this.ColumnTransaction.Width = 125;
-            // 
-            // ColumnAmount
-            // 
-            this.ColumnAmount.HeaderText = "Amount";
-            this.ColumnAmount.MaxInputLength = 10;
-            this.ColumnAmount.Name = "ColumnAmount";
-            // 
-            // ColumnNet
-            // 
-            this.ColumnNet.HeaderText = "Net";
-            this.ColumnNet.MaxInputLength = 10;
-            this.ColumnNet.Name = "ColumnNet";
-            // 
-            // ColumnSalesTax
-            // 
-            this.ColumnSalesTax.HeaderText = "Sales Tax";
-            this.ColumnSalesTax.MaxInputLength = 10;
-            this.ColumnSalesTax.Name = "ColumnSalesTax";
-            // 
-            // ColumnExempt
-            // 
-            this.ColumnExempt.HeaderText = "Exempt";
-            this.ColumnExempt.Name = "ColumnExempt";
-            this.ColumnExempt.Width = 50;
             // 
             // label3
             // 
@@ -163,6 +133,56 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 10;
             // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.database1DataSet;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            // 
+            // transactionDataGridViewTextBoxColumn
+            // 
+            this.transactionDataGridViewTextBoxColumn.DataPropertyName = "Transaction";
+            this.transactionDataGridViewTextBoxColumn.HeaderText = "Transaction";
+            this.transactionDataGridViewTextBoxColumn.Name = "transactionDataGridViewTextBoxColumn";
+            // 
+            // amountDataGridViewTextBoxColumn
+            // 
+            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
+            // 
+            // netDataGridViewTextBoxColumn
+            // 
+            this.netDataGridViewTextBoxColumn.DataPropertyName = "Net";
+            this.netDataGridViewTextBoxColumn.HeaderText = "Net";
+            this.netDataGridViewTextBoxColumn.Name = "netDataGridViewTextBoxColumn";
+            // 
+            // salesTaxDataGridViewTextBoxColumn
+            // 
+            this.salesTaxDataGridViewTextBoxColumn.DataPropertyName = "SalesTax";
+            this.salesTaxDataGridViewTextBoxColumn.HeaderText = "SalesTax";
+            this.salesTaxDataGridViewTextBoxColumn.Name = "salesTaxDataGridViewTextBoxColumn";
+            // 
+            // exemptDataGridViewCheckBoxColumn
+            // 
+            this.exemptDataGridViewCheckBoxColumn.DataPropertyName = "Exempt";
+            this.exemptDataGridViewCheckBoxColumn.HeaderText = "Exempt";
+            this.exemptDataGridViewCheckBoxColumn.Name = "exemptDataGridViewCheckBoxColumn";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,9 +201,12 @@
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "IRSAway";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStripMain.ResumeLayout(false);
             this.menuStripMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAccounts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,16 +218,19 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemSave;
         private System.Windows.Forms.DataGridView dataGridViewAccounts;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTransaction;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAmount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSalesTax;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn ColumnExempt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private Database1DataSet database1DataSet;
+        private System.Windows.Forms.BindingSource tableBindingSource;
+        private Database1DataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn transactionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn netDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salesTaxDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn exemptDataGridViewCheckBoxColumn;
     }
 }
 
